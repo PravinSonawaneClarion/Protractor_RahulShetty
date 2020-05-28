@@ -1,8 +1,9 @@
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
 exports.config = {
-    //seleniumAddress: 'http://localhost:4444/wd/hub',         //comment when running through jenkins
-    specs: ['DataDriven.js'],
+    seleniumAddress: 'http://localhost:4444/wd/hub',         //comment when running through jenkins
+    //directConnect: true,
+    specs: ['async_await.js'],
 
     //common global pre requisite
     onPrepare: function () {
